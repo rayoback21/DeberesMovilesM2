@@ -1,0 +1,23 @@
+# ¿Qué es Zustand?
+
+* a) Una biblioteca de gestión de estado para Angular.
+* b) Una biblioteca de gestión de estado para React.
+* c) Una biblioteca de gestión de estado para Vue.js.
+
+Answer: c)
+
+# ¿Cómo se puede definir y actualizar el estado en una aplicación que utiliza Zustand?
+
+* a) Utilizando componentes de clase.
+* b) Utilizando hooks de React.
+* c) Utilizando directivas de Vue.js.
+
+Answer: a)
+
+# ¿Cuál es una característica destacada de Zustand?
+
+* a) Su complejidad y robustez.
+* b) Su enfoque minimalista y su capacidad de gestionar el estado de manera eficiente.
+* c) Su integración exclusiva con jQuery. 
+
+RAnswer: b)
