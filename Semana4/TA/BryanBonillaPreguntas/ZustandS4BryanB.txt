@@ -20,4 +20,4 @@ Answer: a)
 * b) Su enfoque minimalista y su capacidad de gestionar el estado de manera eficiente.
 * c) Su integración exclusiva con jQuery. 
 
-RAnswer: b)
+Answer: b)

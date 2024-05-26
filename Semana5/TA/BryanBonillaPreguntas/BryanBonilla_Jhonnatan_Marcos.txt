@@ -1,0 +1,34 @@
+    **Preguntas Reflexivas **[Semana#5]**
+
+PREGUNTA#1
+¿Qué puede causar un bucle infinito de renderizado cuando se usa useEffect? [Errores-Hooks] **[Semana#5]**
+
+A) Usar funciones asíncronas en useEffect.
+
+B) Usar useState incorrectamente.
+
+C) No especificar correctamente las dependencias.
+
+ANSWER: C
+
+PREGUNTA#2
+¿Cuál es un error común al usar useState en un componente funcional? [Errores-Hooks] **[Semana#5]**
+
+A) No limpiar los efectos secundarios en useEffect.
+
+B) Olvidar declarar todas las dependencias en useEffect.
+
+C) Actualizar el estado con el valor anterior sin usar la función de actualización.
+
+ANSWER: C
+
+PREGUNTA#3
+¿Qué error puede ocurrir al usar useContext en React? [Errores-Hooks] **[Semana#5]**
+
+A) No proporcionar un valor de contexto inicial.
+
+B) No envolver el componente con el proveedor del contexto.
+
+C) Intentar actualizar el contexto desde un componente de clase.
+
+ANSWER: A
