@@ -39,7 +39,7 @@ import {
   ProductEdit,
   ProductList,
   ProductShow,
-} from "./pages/products";
+} from "./pages/Products";
 import { ForgotPassword } from "./pages/forgotPassword";
 import { Login } from "./pages/login";
 import { Register } from "./pages/register";
