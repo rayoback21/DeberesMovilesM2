@@ -1,0 +1,20 @@
+¿Cuál es la respuesta correcta a esta pregunta? [#6 de la Semana]
+A. ¿React Router es una biblioteca que permite manejar el enrutamiento en aplicaciones React?
+B. ¿React Router es una herramienta de desarrollo para bases de datos?
+C. ¿React Router se utiliza para gestionar el estado de una aplicación?
+
+ANSWER: B
+
+¿Cuál es la respuesta correcta a esta pregunta? [#6 de la Semana]
+A. ¿El componente <Route> en React Router se usa para manejar formularios?
+B. ¿El componente <Route> en React Router se usa para realizar solicitudes HTTP?
+C. ¿El componente <Route> en React Router se usa para definir rutas en una aplicación?
+
+ANSWER: C
+
+¿Cuál es la respuesta correcta a esta pregunta? [#6 de la Semana]
+A. ¿useHistory es un hook de React Router que se usa para manejar formularios?
+B. ¿useHistory es un hook de React Router que se usa para gestionar el estado global de la aplicación?
+C. ¿useHistory es un hook de React Router que permite acceder y manipular el historial de navegación?
+
+ANSWER: A
