@@ -1,40 +1,56 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const answers: string[] = ["Whatever.", "Sure.", "Whoa, chill out!", "Calm down, I know what I'm doing!"];
+class MatrixComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      input: props.input,
+      rows: this.getRows(props.input),
+      columns: this.getColumns(props.input)
+    };
+  }
 
-const Hey: React.FC = () => {
-  const [message, setMessage] = useState<string>('');
-  const [response, setResponse] = useState<string>('');
+  getRows(input) {
+    return input.split('\n').map(x => x.split(" ").map(x => +x));
+  }
 
-  const handleMessageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setMessage(e.target.value);
-  };
-
-  const handleSubmit = () => {
-    const speech = message.trim();
-    if (speech === "") {
-      setResponse("Fine. Be that way!");
-      return;
+  getColumns(input) {
+    let matrix = this.getRows(input);
+    let cols = [];
+    for (let i = 0; i < matrix[0].length; i++) {
+      cols[i] = matrix.map(x => x[i]);
     }
+    return cols;
+  }
 
-    const isQuestion = speech.endsWith("?") ? 1 : 0;
-    const isYelling = /[A-Z]+/.test(speech) && speech === speech.toUpperCase() ? 2 : 0;
+  render() {
+    return (
+      <div>
+        <h2>Rows</h2>
+        <ul>
+          {this.state.rows.map((row, index) => (
+            <li key={index}>{row.join(', ')}</li>
+          ))}
+        </ul>
+        <h2>Columns</h2>
+        <ul>
+          {this.state.columns.map((col, index) => (
+            <li key={index}>{col.join(', ')}</li>
+          ))}
+        </ul>
+      </div>
+    );
+  }
+}
 
-    setResponse(answers[isQuestion + isYelling]);
-  };
-
+function App() {
+  const inputText = "1 2 3\n4 5 6\n7 8 9"; // ejemplo de texto de entrada
   return (
     <div>
-      <input
-        type="text"
-        value={message}
-        onChange={handleMessageChange}
-        placeholder="Type your message"
-      />
-      <button onClick={handleSubmit}>Send</button>
-      <p>{response}</p>
+      <h1>Matriz</h1>
+      <MatrixComponent input={inputText} />
     </div>
   );
-};
+}
 
-export default Hey;
+export default App;
