@@ -55,25 +55,7 @@ export const ProductCreate = () => {
         >
           <Input type="number" />
         </Form.Item>
-        <Form.Item
-          label={"Status"}
-          name={["status"]}
-          initialValue={"available"}
-          rules={[
-            {
-              required: true,
-            },
-          ]}
-        >
-          <Select
-            defaultValue={"available"}
-            options={[
-              { value: "available", label: "Available" },
-              { value: "unavailable", label: "Unavailable" },
-            ]}
-            style={{ width: 120 }}
-          />
-        </Form.Item>
+
       </Form>
     </Create>
   );

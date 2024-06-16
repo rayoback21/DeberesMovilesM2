@@ -45,7 +45,6 @@ import {
             }
           />
           <Table.Column dataIndex="price" title={"Price"} />
-          <Table.Column dataIndex="status" title={"Status"} />
           <Table.Column
             dataIndex={["createdAt"]}
             title={"Created at"}

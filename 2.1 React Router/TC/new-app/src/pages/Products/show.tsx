@@ -39,8 +39,6 @@ import {
         />
         <Title level={5}>{"Price"}</Title>
         <NumberField value={record?.price} />
-        <Title level={5}>{"Status"}</Title>
-        <TextField value={record?.status} />
         <Title level={5}>{"CreatedAt"}</Title>
         <DateField value={record?.createdAt} />
       </Show>
